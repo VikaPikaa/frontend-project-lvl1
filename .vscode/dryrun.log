@@ -1,0 +1,7 @@
+make: Entering directory `/Users/vikapika/Documents/Hexlet/frontend-project-lvl1'
+ 
+make: Leaving directory `/Users/vikapika/Documents/Hexlet/frontend-project-lvl1'
+ 
+make: *** No rule to make target `npm', needed by `install'.
+make: *** No rule to make target `ci', needed by `install'.
+
