@@ -1,19 +1,5 @@
-import * as Gcd from '../src/logic/gcd.js';
-import * as indexJs from '../src/index.js';
+#!/usr/bin/env node
+// eslint-disable-next-line no-unused-vars
+import gcd from '../src/games/game-gcd.js';
 
-console.log('Find the greatest common divisor of given numbers.');
-
-function game() {
-  const target = Gcd.randomNums();
-  indexJs.askQuestion(target);
-  const answer = indexJs.getAnswer();
-  const correctAnswer = Gcd.correctAnswer(target);
-  const continionGame = indexJs.checkCorrect(correctAnswer === answer, correctAnswer, answer);
-  if (continionGame) {
-    if (indexJs.continionGame()) {
-      game();
-    }
-  }
-}
-
-game();
+gcd();

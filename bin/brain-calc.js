@@ -1,19 +1,5 @@
-import * as Calc from '../src/logic/calc.js';
-import * as indexJs from '../src/index.js';
+#!/usr/bin/env node
+// eslint-disable-next-line no-unused-vars
+import calc from '../src/games/game-calc.js';
 
-console.log('What is the result of the expression?');
-
-function game() {
-  const target = Calc.expressionCalc();
-  indexJs.askQuestion(target);
-  const answer = indexJs.getAnswer();
-  const correctAnswer = Calc.correctAnswer(target);
-  const continionGame = indexJs.checkCorrect(correctAnswer === answer, correctAnswer, answer);
-  if (continionGame) {
-    if (indexJs.continionGame()) {
-      game();
-    }
-  }
-}
-
-game();
+calc();

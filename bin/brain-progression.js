@@ -1,20 +1,5 @@
-import * as Progression from '../src/logic/progression.js';
-import * as indexJs from '../src/index.js';
+#!/usr/bin/env node
+// eslint-disable-next-line no-unused-vars
+import progression from '../src/games/game-progression.js';
 
-console.log('What number is missing in the progression?');
-
-function game() {
-  Progression.getProgression();
-  const target = Progression.getProgression();
-  indexJs.askQuestion(target);
-  const answer = indexJs.getAnswer();
-  const correctAnswer = Progression.correctAnswer();
-  const continionGame = indexJs.checkCorrect(correctAnswer === answer, correctAnswer, answer);
-  if (continionGame) {
-    if (indexJs.continionGame()) {
-      game();
-    }
-  }
-}
-
-game();
+progression();
