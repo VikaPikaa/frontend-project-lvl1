@@ -6,9 +6,11 @@
 Brain games game consists of 5 brain training games. In each game, the user needs to give the correct answers to the questions asked. In the case of three correct answers, the player becomes the winner. In case of an incorrect answer, the game ends and it is proposed to go through it again.
 
 ### Installation and setup:
+```
 git clone git@github.com:VikaPikaa/frontend-project-lvl1.git
 npm ci
 npm link
+```
 
 ## BRAIN GAMES
 Run game:
