@@ -4,7 +4,7 @@ import * as indexJs from '../index.js';
 function even() {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
-  function game() {
+  function gameEven() {
     const target = Even.randomNum();
     indexJs.askQuestion(target);
     const answer = indexJs.getAnswer();
@@ -12,11 +12,11 @@ function even() {
     const continionGame = indexJs.checkCorrect(correctAnswer === answer, correctAnswer, answer);
     if (continionGame) {
       if (indexJs.continionGame()) {
-        game();
+        gameEven();
       }
     }
   }
 
-  game();
+  gameEven();
 }
 export default even;

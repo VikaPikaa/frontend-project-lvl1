@@ -4,7 +4,7 @@ import * as indexJs from '../index.js';
 function gcd() {
   console.log('Find the greatest common divisor of given numbers.');
 
-  function game() {
+  function gameGcd() {
     const target = Gcd.randomNums();
     indexJs.askQuestion(target);
     const answer = indexJs.getAnswer();
@@ -12,11 +12,11 @@ function gcd() {
     const continionGame = indexJs.checkCorrect(correctAnswer === answer, correctAnswer, answer);
     if (continionGame) {
       if (indexJs.continionGame()) {
-        game();
+        gameGcd();
       }
     }
   }
 
-  game();
+  gameGcd();
 }
 export default gcd;

@@ -4,7 +4,7 @@ import * as indexJs from '../index.js';
 function calc() {
   console.log('What is the result of the expression?');
 
-  function game() {
+  function gameCalc() {
     const target = Calc.expressionCalc();
     indexJs.askQuestion(target);
     const answer = indexJs.getAnswer();
@@ -12,11 +12,11 @@ function calc() {
     const continionGame = indexJs.checkCorrect(correctAnswer === answer, correctAnswer, answer);
     if (continionGame) {
       if (indexJs.continionGame()) {
-        game();
+        gameCalc();
       }
     }
   }
 
-  game();
+  gameCalc();
 }
 export default calc;

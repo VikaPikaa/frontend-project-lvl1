@@ -4,7 +4,7 @@ import * as indexJs from '../index.js';
 function progression() {
   console.log('What number is missing in the progression?');
 
-  function game() {
+  function gameProgression() {
     const target = Progression.getProgression();
     indexJs.askQuestion(target);
     const answer = indexJs.getAnswer();
@@ -12,11 +12,11 @@ function progression() {
     const continionGame = indexJs.checkCorrect(correctAnswer === answer, correctAnswer, answer);
     if (continionGame) {
       if (indexJs.continionGame()) {
-        game();
+        gameProgression();
       }
     }
   }
 
-  game();
+  gameProgression();
 }
 export default progression;
