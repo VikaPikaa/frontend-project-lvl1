@@ -14,10 +14,12 @@ npm link
 
 ## BRAIN GAMES
 Run game:
+```
 brain-games
+```
 
 Preview:
-https://asciinema.org/a/4zcXuVO2YQsYJJC6Z6HIcHElh
+[![asciicast](https://asciinema.org/a/4zcXuVO2YQsYJJC6Z6HIcHElh.svg)](https://asciinema.org/a/4zcXuVO2YQsYJJC6Z6HIcHElh)
 
 ## Game 1: 'Even'
 Run game:
