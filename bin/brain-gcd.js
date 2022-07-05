@@ -1,4 +1,4 @@
-import * as Gcd from '../src/games/gcd.js';
+import * as Gcd from '../src/logic/gcd.js';
 import * as indexJs from '../src/index.js';
 
 console.log('Find the greatest common divisor of given numbers.');

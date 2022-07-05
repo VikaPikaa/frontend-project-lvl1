@@ -1,13 +1,13 @@
-import * as Calc from '../src/logic/calc.js';
-import * as indexJs from '../src/index.js';
+import * as Even from '../logic/even.js';
+import * as indexJs from '../index.js';
 
-console.log('What is the result of the expression?');
+console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
 function game() {
-  const target = Calc.expressionCalc();
+  const target = Even.randomNum();
   indexJs.askQuestion(target);
   const answer = indexJs.getAnswer();
-  const correctAnswer = Calc.correctAnswer(target);
+  const correctAnswer = Even.correctAnswer(target);
   const continionGame = indexJs.checkCorrect(correctAnswer === answer, correctAnswer, answer);
   if (continionGame) {
     if (indexJs.continionGame()) {

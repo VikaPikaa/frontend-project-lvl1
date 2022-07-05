@@ -1,4 +1,4 @@
-import * as Progression from '../src/games/progression.js';
+import * as Progression from '../src/logic/progression.js';
 import * as indexJs from '../src/index.js';
 
 console.log('What number is missing in the progression?');

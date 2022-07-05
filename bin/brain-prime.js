@@ -1,4 +1,4 @@
-import * as Prime from '../src/games/prime.js';
+import * as Prime from '../src/logic/prime.js';
 import * as indexJs from '../src/index.js';
 
 console.log('Answer "yes" if given number is prime. Otherwise answer "no"');
