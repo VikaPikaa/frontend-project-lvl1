@@ -1,3 +1,4 @@
+// const number = Math.floor(Math.random() * 100) + 1;
 const randomTerm = () => Math.floor(Math.random() * 100) + 1;
 const singleNum = () => Math.floor(Math.random() * 10) + 1;
 

@@ -1,4 +1,4 @@
-import { randomNum } from '../helper.js';
+const randomNum = () => Math.floor(Math.random() * 100) + 1;
 
 const correctAnswer = (number) => {
   let flag = true;
