@@ -1,19 +1,22 @@
 import * as Even from '../logic/even.js';
 import * as indexJs from '../index.js';
 
-console.log('Answer "yes" if the number is even, otherwise answer "no".');
+function even() {
+  console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
-function game() {
-  const target = Even.randomNum();
-  indexJs.askQuestion(target);
-  const answer = indexJs.getAnswer();
-  const correctAnswer = Even.correctAnswer(target);
-  const continionGame = indexJs.checkCorrect(correctAnswer === answer, correctAnswer, answer);
-  if (continionGame) {
-    if (indexJs.continionGame()) {
-      game();
+  function game() {
+    const target = Even.randomNum();
+    indexJs.askQuestion(target);
+    const answer = indexJs.getAnswer();
+    const correctAnswer = Even.correctAnswer(target);
+    const continionGame = indexJs.checkCorrect(correctAnswer === answer, correctAnswer, answer);
+    if (continionGame) {
+      if (indexJs.continionGame()) {
+        game();
+      }
     }
   }
-}
 
-game();
+  game();
+}
+export default even;
