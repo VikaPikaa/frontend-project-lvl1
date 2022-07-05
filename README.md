@@ -19,39 +19,55 @@ brain-games
 ```
 
 Preview:
+
 [![asciicast](https://asciinema.org/a/4zcXuVO2YQsYJJC6Z6HIcHElh.svg)](https://asciinema.org/a/4zcXuVO2YQsYJJC6Z6HIcHElh)
 
 ## Game 1: 'Even'
 Run game:
+```
 brain-even
+```
 
 Preview:
-https://asciinema.org/a/8RCF0fGzsEYikcmWDC2TDTGcB
+
+[![asciicast](https://asciinema.org/a/8RCF0fGzsEYikcmWDC2TDTGcB.svg)](https://asciinema.org/a/8RCF0fGzsEYikcmWDC2TDTGcB)
 
 ## Game 2: 'Calc'
 Run game:
-brain-even
+```
+brain-calc
+```
 
 Preview:
-https://asciinema.org/a/ejZZlzEQay8wCjzai73pMCowI
+
+[![asciicast](https://asciinema.org/a/ejZZlzEQay8wCjzai73pMCowI.svg)](https://asciinema.org/a/ejZZlzEQay8wCjzai73pMCowI)
 
 ## Game 3: 'Gsd'
 Run game:
-brain-even
+```
+brain-gsd
+```
 
 Preview:
-https://asciinema.org/a/hPkr7NDuJOlWkyw0147XSULJj
+
+[![asciicast](https://asciinema.org/a/hPkr7NDuJOlWkyw0147XSULJj.svg)](https://asciinema.org/a/hPkr7NDuJOlWkyw0147XSULJj)
 
 ## Game 4: 'Prime'
 Run game:
-brain-even
+```
+brain-prime
+```
 
 Preview:
-https://asciinema.org/a/x3ojAYSHi8CEis2sClvwkUvmc
+
+[![asciicast](https://asciinema.org/a/x3ojAYSHi8CEis2sClvwkUvmc.svg)](https://asciinema.org/a/x3ojAYSHi8CEis2sClvwkUvmc)
 
 ## Game 5: 'Progression'
 Run game:
-brain-even
+```
+brain-progression
+```
 
 Preview:
-https://asciinema.org/a/Cz6SwOVZCnnWPoeRFHySd8u6B
+
+[![asciicast](https://asciinema.org/a/Cz6SwOVZCnnWPoeRFHySd8u6B.svg)](https://asciinema.org/a/Cz6SwOVZCnnWPoeRFHySd8u6B)
