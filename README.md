@@ -1,7 +1,6 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/VikaPikaa/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/VikaPikaa/frontend-project-lvl1/actions)
 <a href="https://codeclimate.com/github/VikaPikaa/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/7a708fae50cfaa1fca22/maintainability" /></a>
-[![linter](https://github.com/VikaPikaa/frontend-project-lvl1/actions/workflows/linter.yml/badge.svg)](https://github.com/ID0NTMIND/frontend-project-lvl1/actions/workflows/linter.yml)
 
 # Brain-games
 Brain games game consists of 5 brain training games. In each game, the user needs to give the correct answers to the questions asked. In the case of three correct answers, the player becomes the winner. In case of an incorrect answer, the game ends and it is proposed to go through it again.
