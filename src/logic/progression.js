@@ -9,7 +9,7 @@ const getProgression = () => {
   const progression = [singleNum()];
   const term = randomTerm();
 
-  for (let i = 0; i < 10; i += 1) {
+  for (let i = 0; i <= 10; i += 1) {
     if (i === 0) {
       progression[i] += term;
     } else {
