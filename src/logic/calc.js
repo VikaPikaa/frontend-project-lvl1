@@ -7,7 +7,7 @@ const randomOperator = () => {
   return operators[rand];
 };
 
-const expressionCalc = () => `${randomNum()}${randomOperator()}${randomNum()}`;
+const expressionCalc = () => `${randomNum()} ${randomOperator()} ${randomNum()}`;
 
 // eslint-disable-next-line no-eval
 const correctAnswer = (expression) => `${eval(expression)}`;
