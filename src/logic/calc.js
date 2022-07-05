@@ -1,5 +1,4 @@
-// const number = Math.floor(Math.random() * 100) + 1;
-const randomNum = () => Math.floor(Math.random() * 100) + 1;
+import { randomNum } from '../helper.js';
 
 const randomOperator = () => {
   const operators = ['+', '-', '*'];

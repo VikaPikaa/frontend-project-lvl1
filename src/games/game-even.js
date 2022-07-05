@@ -1,11 +1,12 @@
 import * as Even from '../logic/even.js';
 import * as indexJs from '../index.js';
+import { randomNum } from '../helper.js';
 
 function even() {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
   function game() {
-    const target = Even.randomNum();
+    const target = randomNum();
     indexJs.askQuestion(target);
     const answer = indexJs.getAnswer();
     const correctAnswer = Even.correctAnswer(target);
