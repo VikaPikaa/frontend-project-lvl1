@@ -1,5 +1,5 @@
-#!/usr/bin/env node
-// eslint-disable-next-line no-unused-vars
-import progression from '../src/games/game-progression.js';
+/* eslint-disable import/no-unresolved */
+import progression from '../src/games/progression.js';
+import gameProgress from '../src/index.js';
 
-progression();
+gameProgress(progression);

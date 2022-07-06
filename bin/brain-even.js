@@ -1,5 +1,5 @@
-#!/usr/bin/env node
-// eslint-disable-next-line no-unused-vars
-import even from '../src/games/game-even.js';
+/* eslint-disable import/no-unresolved */
+import even from '../src/games/even.js';
+import gameProgress from '../src/index.js';
 
-even();
+gameProgress(even);

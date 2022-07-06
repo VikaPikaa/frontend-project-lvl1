@@ -1,41 +1,33 @@
 /* eslint-disable import/prefer-default-export */
 import readlineSync from 'readline-sync';
 
-let correctCount = 0;
+const roundsCount = 3;
 
-console.log('Welcome to the Brain Games!');
+const gameProgress = (logicGame) => {
+  console.log('Welcome to the Brain Games!');
 
-const userName = readlineSync.question('May I have your name? ');
-const helloUser = console.log(`Hello, ${userName}!`);
+  const userName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${userName}!`);
 
-const askQuestion = (expression) => {
-  console.log(`Question: ${expression}`);
-};
+  const gameQuestion = logicGame()[0];
+  console.log(gameQuestion);
 
-const getAnswer = () => {
-  const answer = readlineSync.question('Your answer: ');
-  return answer;
-};
+  for (let i = 0; i < roundsCount; i += 1) {
+    const game = logicGame();
 
-const checkCorrect = (answer, correctAnswer, wrongAnswer) => {
-  if (answer) {
-    console.log('Correct!');
-    correctCount += 1;
-    return true;
+    const gameTarget = game[1];
+    console.log(`Question: ${gameTarget}`);
+
+    const answer = readlineSync.question('Your answer: ');
+    const correctAnswer = game[2];
+
+    if (answer === correctAnswer) {
+      console.log('Correct!');
+    } else {
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`);
+      return;
+    }
   }
-  console.log(`'${wrongAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`);
-  return false;
+  console.log(`Congratulations, ${userName}!`);
 };
-
-// eslint-disable-next-line consistent-return
-const continionGame = () => {
-  if (correctCount === 3) {
-    console.log(`Congratulations, ${userName}!`);
-  } else {
-    return true;
-  }
-};
-
-export {
-  helloUser, askQuestion, getAnswer, checkCorrect, continionGame,
-};
+export default gameProgress;

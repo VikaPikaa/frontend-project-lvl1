@@ -1,5 +1,5 @@
-#!/usr/bin/env node
-// eslint-disable-next-line no-unused-vars
-import gcd from '../src/games/game-gcd.js';
+/* eslint-disable import/no-unresolved */
+import gcd from '../src/games/gcd.js';
+import gameProgress from '../src/index.js';
 
-gcd();
+gameProgress(gcd);

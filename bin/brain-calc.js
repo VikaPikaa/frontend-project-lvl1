@@ -1,5 +1,5 @@
-#!/usr/bin/env node
-// eslint-disable-next-line no-unused-vars
-import calc from '../src/games/game-calc.js';
+/* eslint-disable import/no-unresolved */
+import calc from '../src/games/calc.js';
+import gameProgress from '../src/index.js';
 
-calc();
+gameProgress(calc);
