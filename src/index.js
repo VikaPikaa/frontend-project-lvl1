@@ -19,7 +19,6 @@ const gameProgress = (logicGame) => {
 
     const answer = readlineSync.question('Your answer: ');
     const correctAnswer = game[2];
-
     if (answer === correctAnswer) {
       console.log('Correct!');
     } else {
