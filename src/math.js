@@ -8,6 +8,8 @@ const randomOperator = () => {
 };
 
 const primeFunction = (number) => {
+  if (number <= 1) return false;
+
   let flag = true;
   for (let i = 2; i < number; i += 1) {
     if (number % i === 0) {
