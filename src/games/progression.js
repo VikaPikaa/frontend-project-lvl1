@@ -1,11 +1,12 @@
-import { randomNum, randomSingleNum } from '../math.js';
+import randomNum from '../randomNum.js';
+import gameProgress from '../index.js';
 
-const index = randomSingleNum();
+const index = randomNum(10);
 let answer = 0;
 
 const progressionFunction = () => {
-  const progression = [randomSingleNum()];
-  const term = randomNum();
+  const progression = [randomNum(10)];
+  const term = randomNum(100);
 
   for (let i = 0; i <= 10; i += 1) {
     if (i === 0) {
@@ -25,4 +26,4 @@ const progression = () => {
   const correctAnswer = `${answer}`;
   return [question, target, correctAnswer];
 };
-export default progression;
+export default gameProgress(progression);

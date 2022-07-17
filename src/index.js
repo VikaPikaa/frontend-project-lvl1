@@ -8,17 +8,15 @@ const gameProgress = (logicGame) => {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
 
-  const gameQuestion = logicGame()[0];
+  const [gameQuestion] = logicGame();
   console.log(gameQuestion);
 
   for (let i = 0; i < roundsCount; i += 1) {
-    const game = logicGame();
+    const [, gameTarget, correctAnswer] = logicGame();
 
-    const gameTarget = game[1];
     console.log(`Question: ${gameTarget}`);
 
     const answer = readlineSync.question('Your answer: ');
-    const correctAnswer = game[2];
     if (answer === correctAnswer) {
       console.log('Correct!');
     } else {
